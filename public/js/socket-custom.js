@@ -13,3 +13,7 @@ socket.emit('sendMessage', {
 }, function(resp){
     console.log("Message from server: ", resp);
 })
+
+socket.on('sendMessage', function(message){
+    console.log("Servidor: ", message);
+})
